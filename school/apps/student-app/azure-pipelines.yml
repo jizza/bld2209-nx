@@ -1,0 +1,32 @@
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '12.x'
+    displayName: 'Install Node.js'
+
+  - task: Cache@2
+    inputs:
+      key: 'npm | "$(Agent.OS)" | ./school/package-lock.json'
+      path: './school/node_modules'
+      cacheHitVar: 'CacheRestored'
+    displayName: 'Cache npm install'
+
+  - script: npm install --no-save
+    workingDirectory: school
+    displayName: 'npm install'
+    condition: ne(variables.CacheRestored, 'true')
+
+  - script: npm run nx run-many -- --projects=student-app --target=lint --with-deps --parallel
+    workingDirectory: school
+    displayName: 'Run lint'
+
+  - script: npm run nx run-many -- --projects=student-app --target=test --with-deps --ci --parallel
+    workingDirectory: school
+    displayName: 'Run test'
+
+  - script: npm run nx build student-app -- --prod
+    workingDirectory: school
+    displayName: 'Run build'
