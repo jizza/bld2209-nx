@@ -27,6 +27,9 @@
       ],
       "@school/teacher/feature-create-assignments": [
         "libs/teacher/feature-create-assignments/src/index.ts"
+      ],
+      "@school/student/feature-view-assignments": [
+        "libs/student/feature-view-assignments/src/index.ts"
       ]
     }
   },

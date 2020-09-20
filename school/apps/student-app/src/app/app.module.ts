@@ -7,8 +7,8 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('@school/teacher/feature-create-assignments').then(
-        (m) => m.TeacherFeatureCreateAssignmentsModule
+      import('@school/student/feature-view-assignments').then(
+        (m) => m.StudentFeatureViewAssignmentsModule
       ),
   },
 ];
