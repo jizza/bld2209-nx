@@ -1,3 +1,4 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { ViewAssignmentComponent } from './view-assignment.component';
 
@@ -9,6 +10,7 @@ describe('ViewAssignmentComponent', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [ViewAssignmentComponent],
+        schemas: [NO_ERRORS_SCHEMA],
       }).compileComponents();
     })
   );
