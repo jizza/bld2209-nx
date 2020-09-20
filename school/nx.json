@@ -28,6 +28,18 @@
     "teacher-app-e2e": {
       "tags": [],
       "implicitDependencies": ["teacher-app"]
+    },
+    "shared-assignments-ui": {
+      "tags": ["scope:shared", "type:ui"]
+    },
+    "shared-assignments-data-access": {
+      "tags": ["scope:shared", "type:data-access"]
+    },
+    "shared-assignments-models": {
+      "tags": ["scope:shared", "type:models"]
+    },
+    "teacher-feature-create-assignments": {
+      "tags": ["scope:teacher", "type:feature"]
     }
   }
 }

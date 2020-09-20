@@ -117,6 +117,122 @@
           }
         }
       }
+    },
+    "shared-assignments-ui": {
+      "projectType": "library",
+      "root": "libs/shared/assignments/ui",
+      "sourceRoot": "libs/shared/assignments/ui/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/assignments/ui/tsconfig.lib.json",
+              "libs/shared/assignments/ui/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/assignments/ui/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/assignments/ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-assignments-data-access": {
+      "projectType": "library",
+      "root": "libs/shared/assignments/data-access",
+      "sourceRoot": "libs/shared/assignments/data-access/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/assignments/data-access/tsconfig.lib.json",
+              "libs/shared/assignments/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/assignments/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/assignments/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-assignments-models": {
+      "projectType": "library",
+      "root": "libs/shared/assignments/models",
+      "sourceRoot": "libs/shared/assignments/models/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/assignments/models/tsconfig.lib.json",
+              "libs/shared/assignments/models/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/assignments/models/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/assignments/models/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "teacher-feature-create-assignments": {
+      "projectType": "library",
+      "root": "libs/teacher/feature-create-assignments",
+      "sourceRoot": "libs/teacher/feature-create-assignments/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/teacher/feature-create-assignments/tsconfig.lib.json",
+              "libs/teacher/feature-create-assignments/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/teacher/feature-create-assignments/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/teacher/feature-create-assignments/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
