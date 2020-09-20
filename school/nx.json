@@ -89,6 +89,9 @@
     },
     "teacher-class-admin-feature": {
       "tags": ["scope:teacher", "type:feature"]
+    },
+    "shared-handins-ui": {
+      "tags": ["scope:shared", "type:ui"]
     }
   }
 }

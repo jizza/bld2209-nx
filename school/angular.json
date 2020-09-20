@@ -744,6 +744,32 @@
         }
       },
       "schematics": {}
+    },
+    "shared-handins-ui": {
+      "projectType": "library",
+      "root": "libs/shared/handins/ui",
+      "sourceRoot": "libs/shared/handins/ui/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/handins/ui/tsconfig.lib.json",
+              "libs/shared/handins/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/handins/ui/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/handins/ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

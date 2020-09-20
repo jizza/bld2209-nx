@@ -61,7 +61,8 @@
       ],
       "@school/teacher/class-admin/feature": [
         "libs/teacher/class-admin/feature/src/index.ts"
-      ]
+      ],
+      "@school/shared/handins/ui": ["libs/shared/handins/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

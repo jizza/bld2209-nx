@@ -6,4 +6,4 @@ import { Comp1Component } from './comp1/comp1.component';
   imports: [CommonModule],
   declarations: [Comp1Component],
 })
-export class TeacherClassAdminFeatureModule {}
+export class SharedHandinsUiModule {}
