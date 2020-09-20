@@ -50,6 +50,45 @@
     },
     "student-feature-view-assignments": {
       "tags": ["scope:student", "type:feature"]
+    },
+    "shared-handins-data-access": {
+      "tags": ["scope:shared", "type:data-access"]
+    },
+    "shared-handins-models": {
+      "tags": ["scope:shared", "type:models"]
+    },
+    "shared-auth-feature": {
+      "tags": ["scope:shared", "type:feature"]
+    },
+    "shared-auth-data-access": {
+      "tags": ["scope:shared", "type:data-access"]
+    },
+    "shared-auth-models": {
+      "tags": ["scope:shared", "type:models"]
+    },
+    "shared-ui-menu": {
+      "tags": ["scope:shared", "type:ui"]
+    },
+    "shared-ui-header": {
+      "tags": ["scope:shared", "type:ui"]
+    },
+    "shared-util-formatting": {
+      "tags": ["scope:shared", "type:util"]
+    },
+    "student-feature-handin-assignments": {
+      "tags": ["scope:student", "type:feature"]
+    },
+    "teacher-feature-review-handins": {
+      "tags": ["scope:teacher", "type:feature"]
+    },
+    "teacher-class-admin-data-access": {
+      "tags": ["scope:teacher", "type:data-access"]
+    },
+    "teacher-class-admin-models": {
+      "tags": ["scope:teacher", "type:models"]
+    },
+    "teacher-class-admin-feature": {
+      "tags": ["scope:teacher", "type:feature"]
     }
   }
 }

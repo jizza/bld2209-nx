@@ -379,6 +379,371 @@
         }
       },
       "schematics": {}
+    },
+    "shared-handins-data-access": {
+      "projectType": "library",
+      "root": "libs/shared/handins/data-access",
+      "sourceRoot": "libs/shared/handins/data-access/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/handins/data-access/tsconfig.lib.json",
+              "libs/shared/handins/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/handins/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/handins/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-handins-models": {
+      "projectType": "library",
+      "root": "libs/shared/handins/models",
+      "sourceRoot": "libs/shared/handins/models/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/handins/models/tsconfig.lib.json",
+              "libs/shared/handins/models/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/handins/models/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/handins/models/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-auth-feature": {
+      "projectType": "library",
+      "root": "libs/shared/auth/feature",
+      "sourceRoot": "libs/shared/auth/feature/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/auth/feature/tsconfig.lib.json",
+              "libs/shared/auth/feature/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/auth/feature/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/auth/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-auth-data-access": {
+      "projectType": "library",
+      "root": "libs/shared/auth/data-access",
+      "sourceRoot": "libs/shared/auth/data-access/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/auth/data-access/tsconfig.lib.json",
+              "libs/shared/auth/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/auth/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/auth/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-auth-models": {
+      "projectType": "library",
+      "root": "libs/shared/auth/models",
+      "sourceRoot": "libs/shared/auth/models/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/auth/models/tsconfig.lib.json",
+              "libs/shared/auth/models/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/auth/models/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/auth/models/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-ui-menu": {
+      "projectType": "library",
+      "root": "libs/shared/ui-menu",
+      "sourceRoot": "libs/shared/ui-menu/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui-menu/tsconfig.lib.json",
+              "libs/shared/ui-menu/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui-menu/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui-menu/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-ui-header": {
+      "projectType": "library",
+      "root": "libs/shared/ui-header",
+      "sourceRoot": "libs/shared/ui-header/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui-header/tsconfig.lib.json",
+              "libs/shared/ui-header/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui-header/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui-header/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-util-formatting": {
+      "projectType": "library",
+      "root": "libs/shared/util-formatting",
+      "sourceRoot": "libs/shared/util-formatting/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/util-formatting/tsconfig.lib.json",
+              "libs/shared/util-formatting/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/util-formatting/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/util-formatting/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "student-feature-handin-assignments": {
+      "projectType": "library",
+      "root": "libs/student/feature-handin-assignments",
+      "sourceRoot": "libs/student/feature-handin-assignments/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/student/feature-handin-assignments/tsconfig.lib.json",
+              "libs/student/feature-handin-assignments/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/student/feature-handin-assignments/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/student/feature-handin-assignments/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "teacher-feature-review-handins": {
+      "projectType": "library",
+      "root": "libs/teacher/feature-review-handins",
+      "sourceRoot": "libs/teacher/feature-review-handins/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/teacher/feature-review-handins/tsconfig.lib.json",
+              "libs/teacher/feature-review-handins/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/teacher/feature-review-handins/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/teacher/feature-review-handins/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "teacher-class-admin-data-access": {
+      "projectType": "library",
+      "root": "libs/teacher/class-admin/data-access",
+      "sourceRoot": "libs/teacher/class-admin/data-access/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/teacher/class-admin/data-access/tsconfig.lib.json",
+              "libs/teacher/class-admin/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/teacher/class-admin/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/teacher/class-admin/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "teacher-class-admin-models": {
+      "projectType": "library",
+      "root": "libs/teacher/class-admin/models",
+      "sourceRoot": "libs/teacher/class-admin/models/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/teacher/class-admin/models/tsconfig.lib.json",
+              "libs/teacher/class-admin/models/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/teacher/class-admin/models/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/teacher/class-admin/models/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "teacher-class-admin-feature": {
+      "projectType": "library",
+      "root": "libs/teacher/class-admin/feature",
+      "sourceRoot": "libs/teacher/class-admin/feature/src",
+      "prefix": "school",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/teacher/class-admin/feature/tsconfig.lib.json",
+              "libs/teacher/class-admin/feature/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/teacher/class-admin/feature/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/teacher/class-admin/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

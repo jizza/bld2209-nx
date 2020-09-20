@@ -30,6 +30,37 @@
       ],
       "@school/student/feature-view-assignments": [
         "libs/student/feature-view-assignments/src/index.ts"
+      ],
+      "@school/shared/handins/data-access": [
+        "libs/shared/handins/data-access/src/index.ts"
+      ],
+      "@school/shared/handins/models": [
+        "libs/shared/handins/models/src/index.ts"
+      ],
+      "@school/shared/auth/feature": ["libs/shared/auth/feature/src/index.ts"],
+      "@school/shared/auth/data-access": [
+        "libs/shared/auth/data-access/src/index.ts"
+      ],
+      "@school/shared/auth/models": ["libs/shared/auth/models/src/index.ts"],
+      "@school/shared/ui-menu": ["libs/shared/ui-menu/src/index.ts"],
+      "@school/shared/ui-header": ["libs/shared/ui-header/src/index.ts"],
+      "@school/shared/util-formatting": [
+        "libs/shared/util-formatting/src/index.ts"
+      ],
+      "@school/student/feature-handin-assignments": [
+        "libs/student/feature-handin-assignments/src/index.ts"
+      ],
+      "@school/teacher/feature-review-handins": [
+        "libs/teacher/feature-review-handins/src/index.ts"
+      ],
+      "@school/teacher/class-admin/data-access": [
+        "libs/teacher/class-admin/data-access/src/index.ts"
+      ],
+      "@school/teacher/class-admin/models": [
+        "libs/teacher/class-admin/models/src/index.ts"
+      ],
+      "@school/teacher/class-admin/feature": [
+        "libs/teacher/class-admin/feature/src/index.ts"
       ]
     }
   },
