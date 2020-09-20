@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { TeacherFeatureCreateAssignmentsModule } from '@school/teacher/feature-create-assignments';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
@@ -16,11 +15,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes),
-    TeacherFeatureCreateAssignmentsModule,
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(routes), ,],
   providers: [],
   bootstrap: [AppComponent],
 })
