@@ -1,5 +1,5 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ViewAssignmentComponent } from './view-assignment.component';
 
 describe('ViewAssignmentComponent', () => {
@@ -8,9 +8,9 @@ describe('ViewAssignmentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ViewAssignmentComponent ]
-    })
-    .compileComponents();
+      declarations: [ViewAssignmentComponent],
+      schemas: [NO_ERRORS_SCHEMA],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
