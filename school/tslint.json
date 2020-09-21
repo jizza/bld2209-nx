@@ -60,8 +60,51 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "scope:student",
+            "onlyDependOnLibsWithTags": ["scope:student", "scope:shared"]
+          },
+          {
+            "sourceTag": "scope:teacher",
+            "onlyDependOnLibsWithTags": ["scope:teacher", "scope:shared"]
+          },
+          {
+            "sourceTag": "scope:shared",
+            "onlyDependOnLibsWithTags": ["scope:shared"]
+          },
+          {
+            "sourceTag": "type:app",
+            "onlyDependOnLibsWithTags": [
+              "type:feature",
+              "type:data-access",
+              "type:util",
+              "type:models",
+              "type:ui"
+            ]
+          },
+          {
+            "sourceTag": "type:feature",
+            "onlyDependOnLibsWithTags": [
+              "type:data-access",
+              "type:util",
+              "type:models",
+              "type:ui"
+            ]
+          },
+          {
+            "sourceTag": "type:ui",
+            "onlyDependOnLibsWithTags": ["type:ui", "type:models", "type:util"]
+          },
+          {
+            "sourceTag": "type:data-access",
+            "onlyDependOnLibsWithTags": ["type:util", "type:models"]
+          },
+          {
+            "sourceTag": "type:util",
+            "onlyDependOnLibsWithTags": ["type:util", "type:models"]
+          },
+          {
+            "sourceTag": "type:models",
+            "onlyDependOnLibsWithTags": ["type:models"]
           }
         ]
       }
